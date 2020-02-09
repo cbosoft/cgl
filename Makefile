@@ -25,4 +25,4 @@ test: shared
 	$(CXX) $(CFLAGS) -o $@ src/main.c -L`pwd` -lcgl $(LINK)
 
 clean:
-	rm -rf *.o
+	rm -rf obj $(SO) 
