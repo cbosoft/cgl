@@ -1,6 +1,6 @@
 CXX = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic -g $(shell pkg-config --cflags gtk+-3.0)
-LINK   = $(shell pkg-config --libs gtk+-3.0)
+LINK   = $(shell pkg-config --libs gtk+-3.0) -lm
 SO = libcgl.so
 OBJ = obj/cgl.o
 HDR = src/cgl.h
