@@ -22,7 +22,7 @@ obj/%.o: src/%.c
 	$(CXX) $(CFLAGS) -c -o $@ -fPIC $<
 
 test: shared
-	$(CXX) $(CFLAGS) -o $@ src/main.c -L`pwd` -lcgl
+	$(CXX) $(CFLAGS) -o $@ src/main.c -L`pwd` -lcgl $(LINK)
 
 clean:
 	rm -rf *.o
